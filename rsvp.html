@@ -1,0 +1,37 @@
+<!-- rsvp.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Подтвердите участие</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>RSVP</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="story.html">О нас</a>
+      <a href="details.html">Детали</a>
+      <a href="rsvp.html">RSVP</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="attending">Вы с нами?</label>
+        <select id="attending" name="attending">
+          <option value="Да">Да, конечно!</option>
+          <option value="Нет">К сожалению, нет</option>
+        </select><br><br>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
